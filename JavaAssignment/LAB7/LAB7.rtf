@@ -1,0 +1,171 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Consolas;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue0;\red127\green0\blue85;\red106\green62\blue62;\red0\green0\blue192;\red42\green0\blue255;\red0\green200\blue125;\red63\green127\blue95;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\cf1\b\f0\fs32\lang16393 Arrays and collections\par
+
+\pard\sa200\sl276\slmult1 7.1\par
+\cf2\f1\fs20 package\cf1\b0  VJIT;\cf0\par
+\cf2\b import\cf1\b0  java.util.Scanner;\cf0\par
+\cf2\b public\cf1\b0  \cf2\b class\cf1\b0  Stringarray \{\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b static\cf1\b0  \cf2\b void\cf1\b0  main(String[] \cf3 args\cf1 ) \{\cf0\par
+\cf1\tab\tab\{\cf0\par
+\cf1\tab\tab         \cf2\b int\cf1\b0  \cf3 n\cf1 ;\cf0\par
+\cf1\tab\tab         String \cf3 temp\cf1 ;\cf0\par
+\cf1\tab\tab         Scanner \cf3\ul s\cf1\ulnone  = \cf2\b new\cf1\b0  Scanner(System.\cf4\b\i in\cf1\b0\i0 );\cf0\par
+\cf1\tab\tab         System.\cf4\b\i out\cf1\b0\i0 .print(\cf5 "Enter the number of products:"\cf1 );\cf0\par
+\cf1\tab\tab         \cf3 n\cf1  = \cf3 s\cf1 .nextInt();\cf0\par
+\cf1\tab\tab         String \cf3 names\cf1 [] = \cf2\b new\cf1\b0  String[\cf3 n\cf1 ];\cf0\par
+\cf1\tab\tab         Scanner \cf3\ul s1\cf1\ulnone  = \cf2\b new\cf1\b0  Scanner(System.\cf4\b\i in\cf1\b0\i0 );\cf0\par
+\cf1\tab\tab         System.\cf4\b\i out\cf1\b0\i0 .println(\cf5 "Enter the names of the products:"\cf1 );\cf0\par
+\cf1\tab\tab         \cf2\b for\cf1\b0 (\cf2\b int\cf1\b0  \cf3 i\cf1  = 0; \cf3 i\cf1  < \cf3 n\cf1 ; \cf3 i\cf1 ++)\cf0\par
+\cf1\tab\tab         \{\cf0\par
+\cf1\tab\tab             \cf3 names\cf1 [\cf3 i\cf1 ] = \cf3 s1\cf1 .nextLine();\cf0\par
+\cf1\tab\tab         \}\cf0\par
+\cf1\tab\tab         \cf2\b for\cf1\b0  (\cf2\b int\cf1\b0  \cf3 i\cf1  = 0; \cf3 i\cf1  < \cf3 n\cf1 ; \cf3 i\cf1 ++) \cf0\par
+\cf1\tab\tab         \{\cf0\par
+\cf1\tab\tab             \cf2\b for\cf1\b0  (\cf2\b int\cf1\b0  \cf3 j\cf1  = \cf3 i\cf1  + 1; \cf3 j\cf1  < \cf3 n\cf1 ; \cf3 j\cf1 ++) \cf0\par
+\cf1\tab\tab             \{\cf0\par
+\cf1\tab\tab                 \cf2\b if\cf1\b0  (\cf3 names\cf1 [\cf3 i\cf1 ].compareTo(\cf3 names\cf1 [\cf3 j\cf1 ])>0) \cf0\par
+\cf1\tab\tab                 \{\cf0\par
+\cf1\tab\tab                     \cf3 temp\cf1  = \cf3 names\cf1 [\cf3 i\cf1 ];\cf0\par
+\cf1\tab\tab                     \cf3 names\cf1 [\cf3 i\cf1 ] = \cf3 names\cf1 [\cf3 j\cf1 ];\cf0\par
+\cf1\tab\tab                     \cf3 names\cf1 [\cf3 j\cf1 ] = \cf3 temp\cf1 ;\cf0\par
+\cf1\tab\tab                 \}\cf0\par
+\cf1\tab\tab             \}\cf0\par
+\cf1\tab\tab         \}\cf0\par
+\cf1\tab\tab         System.\cf4\b\i out\cf1\b0\i0 .print(\cf5 "Names in Sorted Order:"\cf1 );\cf0\par
+\cf1\tab\tab         \cf2\b for\cf1\b0  (\cf2\b int\cf1\b0  \cf3 i\cf1  = 0; \cf3 i\cf1  < \cf3 n\cf1  - 1; \cf3 i\cf1 ++) \cf0\par
+\cf1\tab\tab         \{\cf0\par
+\cf1\tab\tab             System.\cf4\b\i out\cf1\b0\i0 .print(\cf3 names\cf1 [\cf3 i\cf1 ] + \cf5 ","\cf1 );\cf0\par
+\cf1\tab\tab         \}\cf0\par
+\cf1\tab\tab         System.\cf4\b\i out\cf1\b0\i0 .print(\cf3 names\cf1 [\cf3 n\cf1  - 1]);\cf0\par
+\cf1\tab\tab     \}\cf0\par
+\cf1\tab\tab\}\cf0\par
+\par
+\cf1\tab\}\cf0\par
+\cf1\b\f0\fs32 output:\par
+\b0\f1\fs20 Enter the number of products:\cf6 4\cf0\par
+\cf1 Enter the names of the products:\cf0\par
+\cf6 door\cf0\par
+\cf6 boxes\cf0\par
+\cf6 Aircooler\cf0\par
+\cf6 board\cf0\par
+\cf1 Names in Sorted Order:Aircooler,board,boxes,door\par
+
+\pard\sa200\sl276\slmult1\qc\b\f0\fs32 (or)\f1\lang9\par
+
+\pard\sa200\sl276\slmult1\b0\fs20\par
+\cf2\b package\cf1\b0  VJIT;\cf0\par
+\cf2\b import\cf1\b0  java.util.Arrays;\cf0\par
+\cf2\b import\cf1\b0  \ul java.util\ulnone .*;\cf0\par
+\cf1  \cf2\b class\cf1\b0  Stringarray \{\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b static\cf1\b0  \cf2\b void\cf1\b0  main(String[] \cf3 args\cf1 ) \{\cf0\par
+\cf1\tab\tab\cf0\par
+\cf1\tab\tab         String \cf3 arr\cf1 [] = \{\cf5 "door"\cf1 ,\cf5 "Aircooler"\cf1 ,\cf5 "board"\cf1 ,\cf5 "boxes"\cf1\};\cf0\par
+\cf1\tab\tab         Arrays.\i sort\i0 (\cf3 arr\cf1 );\cf0\par
+\cf1\tab\tab        System.\cf4\b\i out\cf1\b0\i0 .println(\cf5 "sorted array:\\n\\n"\cf1 +Arrays.\i toString\i0 (\cf3 arr\cf1 ));\cf0\par
+\f0\lang16393\}\f1\lang9\par
+\cf1\tab\}\par
+\b\f0\fs32\lang16393 output:\par
+\b0\f1\fs20 sorted array:\cf0\par
+\par
+\cf1 [Aircooler, board, boxes, door]\cf0\par
+\cf1\f0  \f1\lang9\par
+\cf0\b\f2\fs32 7.3:\par
+\cf2\f1\fs20 ckage\cf1\b0  VJIT;\cf0\par
+\cf1\tab\cf2\b import\cf1\b0  java.util.HashMap;\cf0\par
+\cf1\tab\cf2\b import\cf1\b0  java.util.Scanner;\cf0\par
+\cf1\tab\cf2\b import\cf1\b0  \ul java.util.Set\ulnone ;\cf0\par
+\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b class\cf1\b0  EmployeeService\{\cf0\par
+\cf1\tab    \cf2\b static\cf1\b0  \cf2\b class\cf1\b0  Employee \{\cf0\par
+\cf1\tab String \cf4 name\cf1 ;\cf0\par
+\cf1\tab\cf2\b int\cf1\b0  \cf4 id\cf1 ;\cf0\par
+\cf1\tab\cf2\b double\cf1\b0  \cf4 salary\cf1 ;\cf0\par
+\cf1\tab String \cf4 designation\cf1 ;\cf0\par
+\cf1\tab         String \cf4 insurancescheme\cf1 ;\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  String getInsurancescheme() \{\cf0\par
+\cf1\tab\cf2\b return\cf1\b0  \cf4 insurancescheme\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b void\cf1\b0  setInsurancescheme(String \cf3 insurancescheme\cf1 ) \{\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 insurancescheme\cf1  = \cf3 insurancescheme\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  String getName() \{\cf0\par
+\cf1\tab\cf2\b return\cf1\b0  \cf4 name\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b void\cf1\b0  setName(String \cf3 name\cf1 ) \{\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 name\cf1  = \cf3 name\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b int\cf1\b0  getId() \{\cf0\par
+\cf1\tab\cf2\b return\cf1\b0  \cf4 id\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b void\cf1\b0  setId(\cf2\b int\cf1\b0  \cf3 id\cf1 ) \{\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 id\cf1  = \cf3 id\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b double\cf1\b0  getSalary() \{\cf0\par
+\cf1\tab\cf2\b return\cf1\b0  \cf4 salary\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b void\cf1\b0  setSalary(\cf2\b double\cf1\b0  \cf3 salary\cf1 ) \{\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 salary\cf1  = \cf3 salary\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  String getDesignation() \{\cf0\par
+\cf1\tab\cf2\b return\cf1\b0  \cf4 designation\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b void\cf1\b0  setDesignation(String \cf3 designation\cf1 ) \{\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 designation\cf1  = \cf3 designation\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab Employee(String \cf3 name\cf1 ,\cf2\b int\cf1\b0  \cf3 id\cf1 ,\cf2\b double\cf1\b0  \cf3 salary\cf1 ,String \cf3 designation\cf1 ,String \cf3 insurancescheme\cf1 )\{\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 name\cf1 =\cf3 name\cf1 ;\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 id\cf1 =\cf3 id\cf1 ;\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 salary\cf1 =\cf3 salary\cf1 ;\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 designation\cf1 =\cf3 designation\cf1 ;\cf0\par
+\cf1\tab\cf2\b this\cf1\b0 .\cf4 insurancescheme\cf1 =\cf3 insurancescheme\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b void\cf1\b0  addEmployee(Employee \cf3 emp\cf1 ) \{\cf0\par
+\par
+\cf1\tab       \}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b boolean\cf1\b0  deleteEmployee(\cf2\b int\cf1\b0  \cf3 id\cf1 ) \{\cf0\par
+\cf1\tab\cf2\b return\cf1\b0  \cf2\b false\cf1\b0 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  String toString()\cf0\par
+\cf1\tab\{\cf0\par
+\cf1\tab\cf2\b return\cf1\b0  \cf4 name\cf1  +\cf5 " "\cf1 +\cf4 id\cf1  +\cf5 " "\cf1 +\cf4 salary\cf1  +\cf5 " "\cf1 +\cf4 designation\cf1  +\cf5 " "\cf1  +\cf4 insurancescheme\cf1 ;\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab    \}\cf0\par
+\cf1\tab\cf2\b public\cf1\b0  \cf2\b static\cf1\b0  \cf2\b void\cf1\b0  main(String[] \cf3 args\cf1 ) \{\cf0\par
+\cf1\tab HashMap<String,Employee> \cf3 emp\cf1 =\cf2\b new\cf1\b0  HashMap<>();\cf0\par
+\cf1\tab   Employee \cf3 e1\cf1 =\cf2\b new\cf1\b0  Employee(\cf5 "A"\cf1 ,10,10000,\cf5 "test"\cf1 ,\cf5 "LIC"\cf1 );\cf0\par
+\cf1\tab\cf3 emp\cf1 .put(\cf5 "A"\cf1 ,\cf3 e1\cf1 );\cf0\par
+\cf1\tab Employee \cf3 e2\cf1 =\cf2\b new\cf1\b0  Employee(\cf5 "B"\cf1 ,11,15000,\cf5 "manager"\cf1 ,\cf5 "Fund"\cf1 );\cf0\par
+\cf1\tab\cf3 emp\cf1 .put(\cf5 "B"\cf1 ,\cf3 e2\cf1 );\cf0\par
+\cf1\tab Employee \cf3 e3\cf1 =\cf2\b new\cf1\b0  Employee(\cf5 "C"\cf1 ,10,20000,\cf5 "testing"\cf1 ,\cf5 "pf"\cf1 );\cf0\par
+\cf1\tab\cf3 emp\cf1 .put(\cf5 "C"\cf1 ,\cf3 e3\cf1 );\cf0\par
+\cf1\tab System.\cf4\b\i out\cf1\b0\i0 .println(\cf3 emp\cf1 );\cf0\par
+\cf1\tab\cf7 // System.out.println(emp.get("A"));\cf0\par
+\cf1\tab\cf7 // System.out.println(emp.get("B"));\cf0\par
+\cf1\tab\cf7 // System.out.println(emp.get("C"));\cf0\par
+\cf1\tab Scanner \cf3\ul sc\cf1\ulnone =\cf2\b new\cf1\b0  Scanner(System.\cf4\b\i in\cf1\b0\i0 );\cf0\par
+\cf1\tab String \cf3 s\cf1 =\cf3 sc\cf1 .nextLine();\cf0\par
+\cf1\tab\cf2\b if\cf1\b0 (\cf3 s\cf1 ==\cf5 "pf"\cf1 )\cf0\par
+\cf1\tab\{\cf0\par
+\cf1\tab System.\cf4\b\i out\cf1\b0\i0 .println(\cf3 emp\cf1 .get(\cf5 "C"\cf1 ));\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab\cf3 emp\cf1 .remove(\cf5 "A"\cf1 );\cf0\par
+\cf1\tab System.\cf4\b\i out\cf1\b0\i0 .println(\cf5 "after removing one employee details"\cf1 );\cf0\par
+\cf1\tab System.\cf4\b\i out\cf1\b0\i0 .println(\cf3 emp\cf1 );\cf0\par
+\cf1\tab\}\cf0\par
+\cf1\tab    \cf0\par
+\par
+\cf1\tab    \cf0\par
+\par
+\cf1\tab\tab\cf0\par
+\par
+\cf1\tab\}\cf0\par
+\par
+\b\f2\fs32 output:\par
+\cf1\b0\f1\fs20\{A=A 10 10000.0 test LIC, B=B 11 15000.0 manager Fund, C=C 10 20000.0 testing pf\}\cf0\b\f2\fs32\par
+\par
+\b0\fs22\par
+}
+ 

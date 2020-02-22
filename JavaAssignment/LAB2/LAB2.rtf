@@ -1,0 +1,271 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red42\green0\blue255;\red106\green62\blue62;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs32\lang9 2.1:\par
+\cf1\f1\fs20 package\cf2\b0  VJIT;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  personaldetails \{\cf0\par
+\cf2\tab String \cf3 firstname\cf2 ;\cf0\par
+\cf2\tab String \cf3 lastname\cf2 ;\cf0\par
+\cf2\tab String \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\cf1\b short\cf2\b0  \cf3 age\cf2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 weight\cf2 ;\cf0\par
+\cf2   personaldetails()\cf0\par
+\cf2   \{\cf0\par
+\cf2\tab  \cf3 firstname\cf2 =\cf4 "Divya"\cf2 ;\cf0\par
+\cf2\tab  \cf3 lastname\cf2 =\cf4 "lastname"\cf2 ;\cf0\par
+\cf2\tab  \cf3 gender\cf2 =\cf4 "F"\cf2 ;\cf0\par
+\cf2\tab  \cf3 age\cf2 =20;\cf0\par
+\cf2\tab\cf3 weight\cf2 = 85.55;\cf0\par
+\cf2   \}\cf0\par
+\cf2   \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2   \{\cf0\par
+\cf2\tab   personaldetails \cf5 pd\cf2  =\cf1\b new\cf2\b0  personaldetails();\cf0\par
+\cf2\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "Personaldetails"\cf2 );\cf0\par
+\cf2\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "Firstname:"\cf2  +\cf5 pd\cf2 .\cf3 firstname\cf2 );\cf0\par
+\cf2\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2  +\cf5 pd\cf2 .\cf3 lastname\cf2 );\cf0\par
+\cf2\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2  +\cf5 pd\cf2 .\cf3 gender\cf2 );\cf0\par
+\cf2\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "weight:"\cf2  +\cf5 pd\cf2 .\cf3 weight\cf2 );  \cf0\par
+\cf2\tab    \}\tab\cf0\par
+\cf2\}\par
+\b\f2\lang16393 output:\par
+\b0\f1 Personaldetails\cf0\par
+\cf2 Firstname:Divya\cf0\par
+\cf2 lastname:lastname\cf0\par
+\cf2 gender:F\cf0\par
+\cf2 weight:85.55\cf0\f0\fs22\lang9\par
+\par
+\b\fs32 2.2:\par
+\b0\fs22  public static void main(String[] args) \par
+    \{\par
+        int n;\par
+        Scanner s = new Scanner(System.in);\par
+        System.out.print("Enter the number you want to check:");\par
+        n = s.nextInt();\par
+        if(n > 0)\par
+        \{\par
+            System.out.println("The given number "+n+" is Positive");\par
+        \}\par
+        else if(n < 0)\par
+        \{\par
+            System.out.println("The given number "+n+" is Negative");\par
+        \}\par
+        else\par
+        \{\par
+            System.out.println("The given number "+n+" is neither Positive nor Negative ");\par
+        \}\par
+    \}\par
+\}\par
+\b output:\par
+\cf2\b0\f1\fs20 Enter the number you want to check:\cf0\par
+\cf2 Positive number\cf0\par
+\f0\fs22\par
+\b\fs32 2.3:\par
+\cf1\f1\fs20 package\cf2\b0  VJIT;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  personmain \{\cf0\par
+\cf2\tab String \cf3 firstname\cf2 ;\cf0\par
+\cf2\tab String  \cf3 lastname\cf2 ;\cf0\par
+\cf2\tab\cf1\b char\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\{\cf0\par
+\cf2 person \cf5 p1\cf2  = \cf1\b new\cf2\b0  person();\cf0\par
+\cf2\{\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "personaldetails"\cf2 );\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstname:"\cf2 +\cf5 p1\cf2 .getFirstname());\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2 +\cf5 p1\cf2 .getLastname());\cf0\par
+\cf2\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p1\cf2 .getGender());\tab\cf0\par
+\cf2\}\cf0\par
+\par
+\cf2\tab person \cf5 p2\cf2  = \cf1\b new\cf2\b0  person(\cf4 "mounisha"\cf2 ,\cf4 "arragadda"\cf2 ,\cf4 'f'\cf2 );\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstname:"\cf2 +\cf5 p2\cf2 .getFirstname());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2 +\cf5 p2\cf2 .getLastname());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p2\cf2 .getGender());\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\cf2\}\par
+\b\f2\lang16393 output:\par
+\b0\f1 personaldetails\cf0\par
+\cf2 firstname:Divya\cf0\par
+\cf2 lastname:lastname\cf0\par
+\cf2 gender:F\cf0\par
+\cf2 firstname:mounisha\cf0\par
+\cf2 lastname:arragadda\cf0\par
+\cf2 gender:f\cf0\par
+\b\f0\fs32\lang9 2.4:\par
+\cf1\f1\fs20 package\cf2\b0  VJIT;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  phonenumber \{\cf0\par
+\cf2\tab String \cf3 firstname\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getFirstname() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 firstname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setFirstname(String \cf5 firstname\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 firstname\cf2  = \cf5 firstname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getLastname() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 lastname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setLastname(String \cf5 lastname\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 lastname\cf2  = \cf5 lastname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String \highlight6 getGender\highlight0 () \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setGender(String \cf5 gender\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 gender\cf2  = \cf5 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b short\cf2\b0  getAge() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 age\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setAge(\cf1\b short\cf2\b0  \cf5 age\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 age\cf2  = \cf5 age\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getWeight() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 weight\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setWeight(\cf1\b double\cf2\b0  \cf5 weight\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 weight\cf2  = \cf5 weight\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getNumber() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 number\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setNumber(\cf1\b int\cf2\b0  \cf5 number\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 number\cf2  = \cf5 number\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab String \cf3 lastname\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setNumber(\cf1\b long\cf2\b0  \cf5 number\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 number\cf2  = \cf5\ul number\cf2\ulnone ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab String \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\cf1\b short\cf2\b0  \cf3 age\cf2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 weight\cf2 ;\cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 number\cf2 ;\cf0\par
+\cf2\tab\tab  phonenumber()\cf0\par
+\cf2\tab\tab   \{\cf0\par
+\cf2\tab\tab\tab  \cf3 firstname\cf2 =\cf4 "Divya"\cf2 ;\cf0\par
+\cf2\tab\tab\tab  \cf3 lastname\cf2 =\cf4 "lastname"\cf2 ;\cf0\par
+\cf2\tab\tab\tab  \cf3 gender\cf2 =\cf4 "F"\cf2 ;\cf0\par
+\cf2\tab\tab\tab  \cf3 age\cf2 =20;\cf0\par
+\cf2\tab\tab\tab\cf3 weight\cf2 = 85.55;\cf0\par
+\cf2\tab         \cf3 number\cf2 =995989196;\cf0\par
+\cf2\tab\tab   \}\cf0\par
+\cf2\tab\tab  \cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\tab\tab  \{\cf0\par
+\cf2\tab\tab  p\f2\lang16393 erson\f1\lang9  \cf5 p1\cf2  = \cf1\b new\cf2\b0  p\f2\lang16393 erson\f1\lang9 ();\cf0\par
+\cf2\tab\tab  \{\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "personaldetails"\cf2 );\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstname:"\cf2 +\cf5 p1\cf2 .getFirstname());\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2 +\cf5 p1\cf2 .getLastname());\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p1\cf2 .\highlight6 getGender\highlight0 ());\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "number:"\cf2 +\cf5 p1\cf2 .getNumber());\cf0\par
+\cf2\tab\tab  \}\cf0\par
+\cf2\tab\tab   \{\cf0\par
+\cf2\tab\tab\tab   p\f2\lang16393 erson\f1\lang9  \cf5 p2\cf2  =\cf1\b new\cf2\b0  p\f2\lang16393 erson("pavan", "thummal", 'm', 23.45, 850082294);\cf0\f1\lang9\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "Firstname:"\cf2  +\cf5 p2\cf2 .getFirstname());\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2  +\cf5 p2\cf2 .getLastname());\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2  +\cf5 p2\cf2 .\highlight6 getGender\highlight0 ());\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "weight:"\cf2  +\cf5 p2\cf2 .getWeight());\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "number:"\cf2  +\cf5 p2\cf2 .getNumber());\cf0\par
+\cf2\tab\tab\tab   \cf0\par
+\cf2\tab\tab\tab   \cf0\par
+\par
+\cf2\tab\}\cf0\par
+\cf2\tab\tab  \}\cf0\par
+\cf2\}\cf0\par
+\par
+\b\f0\fs22 OUTPUT:\par
+\cf2\b0\f1\fs20 personaldetails\cf0\par
+\cf2 firstname:Divya\cf0\par
+\cf2 lastname:lastname\cf0\par
+\cf2 gender:F\cf0\par
+\cf2 number:995989196\cf0\par
+\cf2 Personaldetails\cf0\par
+\cf2 Firstname:\f2\lang16393 pavan\cf0\f1\lang9\par
+\cf2 lastname:\f2\lang16393 thummal\cf0\f1\lang9\par
+\cf2 gender:\f2\lang16393 M\cf0\f1\lang9\par
+\cf2 weight:\f2\lang16393 23.45\cf0\f1\lang9\par
+\cf2 number:\f2\lang16393 850082294\par
+\par
+\b\fs32 2.5:\par
+\cf1\f1\fs20 package\cf2\b0  VJIT;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  gender \{\cf0\par
+\cf2\tab String \cf3 firstname\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getFirstname() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 firstname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setFirstname(String \cf5 firstname\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 firstname\cf2  = \cf5 firstname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getLastname() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 lastname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setLastname(String \cf5 lastname\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 lastname\cf2  = \cf5 lastname\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String getGender() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setGender(String \cf5 gender\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 gender\cf2  = \cf5 gender\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b double\cf2\b0  getWeight() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 weight\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setWeight(\cf1\b double\cf2\b0  \cf5 weight\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 weight\cf2  = \cf5 weight\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b int\cf2\b0  getNumber() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf3 number\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b void\cf2\b0  setNumber(\cf1\b int\cf2\b0  \cf5 number\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b this\cf2\b0 .\cf3 number\cf2  = \cf5 number\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab String \cf3 lastname\cf2 ;\cf0\par
+\cf2\tab String \cf3 gender\cf2 ;\cf0\par
+\cf2\tab\cf1\b double\cf2\b0  \cf3 weight\cf2 ;\cf0\par
+\cf2\tab\cf1\b int\cf2\b0  \cf3 number\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf5 args\cf2 )\cf0\par
+\cf2\tab\tab  \{\cf0\par
+\cf2\tab\tab  person \cf5 p1\cf2  = \cf1\b new\cf2\b0  person();\cf0\par
+\cf2\tab\tab  \{\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "personalils"\cf2 );\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "firstname:"\cf2 +\cf5 p1\cf2 .getFirstname());\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2 +\cf5 p1\cf2 .getLastname());\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2 +\cf5 p1\cf2 .getGender());\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "weight:"\cf2 +\cf5 p1\cf2 .getWeight());\cf0\par
+\cf2\tab\tab  \tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "number:"\cf2 +\cf5 p1\cf2 .getNumber());\cf0\par
+\cf2\tab\tab  \}\cf0\par
+\cf2\tab\tab\tab   person \cf5 p2\cf2  =\cf1\b new\cf2\b0  person(\cf4 "pavan"\cf2 , \cf4 "thummal"\cf2 , \cf4 'm'\cf2 ,45.55, 850082294);\cf0\par
+\cf2\tab\tab\tab   \{\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "Firstname:"\cf2  +\cf5 p2\cf2 .getFirstname());\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "lastname:"\cf2  +\cf5 p2\cf2 .getLastname());\cf0\par
+\cf2\tab\tab\tab   Character \cf5 C\cf2 = \cf5 p2\cf2 .getGender();\cf0\par
+\cf2\tab\tab\tab   \cf1\b if\cf2\b0  (\cf5 C\cf2 ==\cf4 'm'\cf2 ||\cf5 C\cf2 ==\cf4 'f'\cf2 )\cf0\par
+\cf2\tab\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "gender:"\cf2  +\cf5 C\cf2 );\cf0\par
+\cf2\tab\tab\tab   \cf1\b else\cf0\b0\par
+\cf2\tab\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "invalid"\cf2 );\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "weight:"\cf2  +\cf5 p2\cf2 .getWeight());\cf0\par
+\cf2\tab\tab\tab   System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 "number:"\cf2  +\cf5 p2\cf2 .getNumber());\cf0\par
+\cf2\tab\tab\tab   \}\tab\tab  \par
+\tab\}\cf0\par
+\cf2\tab\tab  \}\par
+\b\f2\fs32 output:\par
+\b0\f1\fs20 personalils\cf0\par
+\cf2 firstname:Divya\cf0\par
+\cf2 lastname:lastname\cf0\par
+\cf2 gender:F\cf0\par
+\cf2 weight:45.5\cf0\par
+\cf2 number:987654321\cf0\par
+\cf2 Firstname:pavan\cf0\par
+\cf2 lastname:thummal\cf0\par
+\cf2 gender:m\cf0\par
+\cf2 weight:45.55\cf0\par
+\cf2 number:850082294\cf0\par
+\par
+\cf2\f2\lang9\par
+\cf0\f0\fs22\par
+}
+ 

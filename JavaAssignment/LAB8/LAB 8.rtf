@@ -1,0 +1,151 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Consolas;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Calibri;}{\f3\fnil Calibri;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red0\green0\blue192;\red106\green62\blue62;\red42\green0\blue255;\red0\green200\blue125;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\b\f0\fs32\lang16393 8.1:\par
+\f1\fs20 package\cf2\b0  VJIT;\cf0\par
+\cf1\b import\cf2\b0  java.io.*;\cf0\par
+\cf1\b import\cf2\b0  java.io.File;\cf0\par
+\cf1\b import\cf2\b0  java.io.FileNotFoundException;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\cf1\b import\cf2\b0  \ul java.util\ulnone .*;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  reverse \{\cf0\par
+\par
+\cf2\tab\cf1\b private\cf2\b0  \cf1\b static\cf2\b0  BufferedReader \cf3\ul\i input\cf2\ulnone\i0 ;\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf4 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b try\cf2\b0\{\cf0\par
+\cf2\tab\tab\tab File \cf4 rf\cf2 =\cf1\b new\cf2\b0  File(\cf5 "E:\\\\current1.txt"\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab Scanner \cf4 myReader\cf2 =\cf1\b new\cf2\b0  Scanner(\cf4 rf\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b while\cf2\b0 (\cf4 myReader\cf2 .hasNextLine()) \{\cf0\par
+\cf2\tab\tab\tab String \cf4 data\cf2 =\cf4 myReader\cf2 .nextLine();\cf0\par
+\cf2\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 data\cf2 );\cf0\par
+\par
+\cf2\tab\tab\tab\tab StringBuffer \cf4 buffer\cf2 =\cf1\b new\cf2\b0  StringBuffer(\cf4 data\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\cf4 buffer\cf2 =\cf4 buffer\cf2 .reverse();\cf0\par
+\cf2\tab\tab\tab\tab String \cf4 k\cf2 =\cf4 buffer\cf2 .toString();\cf0\par
+\cf2\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 k\cf2 );\cf0\par
+\cf2\tab\tab\tab\tab\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf4 myReader\cf2 .close();\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b catch\cf2\b0 (FileNotFoundException \cf4 e\cf2 )\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "File not found"\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf1\b\f0\fs32 output:\par
+\cf2\b0\f1\fs20 This is Horrible\cf0\par
+\cf2 elbirroH si sihT\par
+\cf1\b\lang9\par
+\f0\fs32\lang16393 8.2:\f1\lang9\par
+\fs20 package\cf2\b0  VJIT;\cf0\par
+\cf1\b import\cf2\b0  java.io.*;\cf0\par
+\cf1\b import\cf2\b0  java.util.*;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  numbertxt \{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf4 args\cf2 ) \cf1\b throws\cf2\b0  NumberFormatException, IOException \{\cf0\par
+\par
+\cf2\tab\tab FileReader \cf4 fr\cf2 =\cf1\b new\cf2\b0  FileReader(\cf5 "E:\\\\current.txt"\cf2 );\cf0\par
+\cf2\tab\tab BufferedReader \cf4 br\cf2 =\cf1\b new\cf2\b0  BufferedReader(\cf4 fr\cf2 );\cf0\par
+\cf2\tab\tab String \cf4 data\cf2 =\cf1\b null\cf2\b0 ;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf4 a\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b while\cf2\b0 ((\cf4 data\cf2 =\cf4 br\cf2 .readLine())!=\cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab Scanner \cf4\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(\cf4 data\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf4 sc\cf2 .useDelimiter(\cf5 ","\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf1\b while\cf2\b0 (\cf4 sc\cf2 .hasNext())\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf4 a\cf2 =Integer.\i parseInt\i0 (\cf4 sc\cf2 .next());\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b if\cf2\b0 (\cf4 a\cf2 %2==0)\cf0\par
+\cf2\tab\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 a\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf4 fr\cf2 .close();\cf0\par
+\cf2\tab\tab\cf4 br\cf2 .close();\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf1\b\par
+\f0\fs32\lang16393 output:\par
+\cf2\b0\f1\fs20 2\cf0\par
+\cf2 4\cf0\par
+\cf2 6\cf0\par
+\cf2 8\cf0\par
+\cf2 10\cf0\par
+\cf1\b\lang9\par
+\f0\fs32\lang16393 8.3:\f1\lang9\par
+\fs20 package\cf2\b0  com.cg.eis.pl;\cf0\par
+\par
+\cf1\b import\cf2\b0  com.cg.eis.bean.*;\cf0\par
+\cf1\b import\cf2\b0  \ul com.cg.eis.exception.EmployeeException\ulnone ;\cf0\par
+\cf1\b import\cf2\b0  \ul java.io.IOException\ulnone ;\cf0\par
+\cf1\b import\cf2\b0  java.io.File;\cf0\par
+\cf1\b import\cf2\b0  java.io.FileOutputStream;\cf0\par
+\cf1\b import\cf2\b0  java.io.ObjectOutputStream;\cf0\par
+\cf1\b import\cf2\b0  java.util.Scanner;\cf0\par
+\cf1\b import\cf2\b0  \ul java.util.Scanner\ulnone ;\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  Empuser \{\cf0\par
+\cf2\tab\cf1\b static\cf2\b0   \cf1\b void\cf2\b0  checksalary(\cf1\b double\cf2\b0  \cf4 salary\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab\cf1\b if\cf2\b0  (\cf4 salary\cf2  <= 3000)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf1\b try\cf0\b0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b throw\cf2\b0  \cf1\b new\cf2\b0  Exception(\cf5 "Enter correct salary"\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b catch\cf2\b0 (Exception \cf4 ee\cf2 )\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 ee\cf2 .getMessage());\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf4 args\cf2 ) \cf1\b throws\cf2\b0  Exception \cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab Scanner \cf4 obj\cf2  = \cf1\b new\cf2\b0  Scanner(System.\cf3\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab Empuser \cf4\ul e\cf2\ulnone =\cf1\b new\cf2\b0  Empuser();\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter the details"\cf2 );\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter the name"\cf2 );\cf0\par
+\cf2\tab\tab String \cf4 name\cf2  = \cf4 obj\cf2 .next();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Salary"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b double\cf2\b0  \cf4 salary\cf2  = \cf4 obj\cf2 .nextDouble();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Enter Designation"\cf2 );\cf0\par
+\cf2\tab\tab String \cf4 designation\cf2  = \cf4 obj\cf2 .next();\cf0\par
+\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab Employeelass \cf4 me\cf2  = \cf1\b new\cf2\b0  Employeelass(\cf4 name\cf2 ,\cf4 salary\cf2 ,\cf4 designation\cf2 );\cf0\par
+\cf2\tab\tab\cf4 me\cf2 .insuranceScheme();\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf5 "Insurance Scheme to "\cf2 +\cf4 me\cf2 .getName()+\cf5 "is:"\cf2 +\cf4 me\cf2 .getInsuranceScheme());\cf0\par
+\cf2\tab\tab System.\cf3\b\i out\cf2\b0\i0 .println(\cf4 me\cf2 .toString());\cf0\par
+\cf2\tab\tab FileOutputStream \cf4 fos\cf2  = \cf1\b new\cf2\b0  FileOutputStream(\cf1\b new\cf2\b0  File(\cf5 "E://PRINT.txt"\cf2 ));\cf0\par
+\cf2\tab\tab ObjectOutputStream \cf4\ul oos\cf2\ulnone  = \cf1\b new\cf2\b0  ObjectOutputStream(\cf4 fos\cf2 );\cf0\par
+\cf2\tab\tab\cf4 oos\cf2 .writeObject(\cf4 me\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\tab\cf4 obj\cf2 .close();\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\b\f2\fs32 OUTPUT:\par
+\cf2\b0\f1\fs20 Enter the details\cf0\par
+\cf2 Enter the name\cf0\par
+\cf6 mn\cf0\par
+\cf2 Enter Salary\cf0\par
+\cf6 400000\cf0\par
+\cf2 Enter Designation\cf0\par
+\cf6 mn\cf0\par
+\cf2 Scheme A\cf0\par
+\cf2 Insurance Scheme to mnis:Scheme A\cf0\par
+\cf2 com.cg.eis.bean.Employeelass@55f96302\cf0\par
+\b\f2\fs32 notepad:\par
+\b0\fs20\'ac\'ed \'05sr \'1ccom.cg.eis.bean.EmployeelassX\'1f\'ae\f3\'87\}\f2\'ebH\'a6\'02 \'05I \'02idD \'06salaryL \line designationt \'12Ljava/lang/String;L \'0finsuranceSchemeq ~ \'01L \'04nameq ~ \'01xp    A\'18j     t  Managert \'08Scheme At \'02mn\par
+\par
+\par
+}
+ 
